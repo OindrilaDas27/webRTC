@@ -1,21 +1,17 @@
-import React from 'react';
-import { Typography, AppBar } from '@mui/material';
-import VideoPlayer from './components/VideoPlayer/VideoPlayer';
-import Options from './components/Options/Options';
-import Notifications from './components/Notifications/Notifications';
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import CallPage from './page/CallPage/CallPage';
+import HomePage from './page/HomePage/HomePage';
+import NoMatch from './page/NoMatch/NoMatch';
 
-const App = () => {
+function App() {
   return (
-    <div>
-        <AppBar position='static' color='inherit'>
-            <Typography variant='h4' align='left'>Chatify</Typography>
-        </AppBar>
-        <VideoPlayer />
-        <Options>
-            <Notifications />
-        </Options>
-    </div>
-  )
+    <Routes>
+      <Route path='/:id' element={ <CallPage /> }/>
+      <Route path='/' element={ <HomePage /> }/>
+      <Route path='*' element={ <NoMatch /> }/>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
