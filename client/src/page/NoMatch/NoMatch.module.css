@@ -1,0 +1,27 @@
+.no_match__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.no_match__content h2 {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #7446ca;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.purple {
+}

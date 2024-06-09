@@ -1,0 +1,55 @@
+.frame_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 21.875rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 0 0 0 0.625rem;
+    overflow: hidden;
+}
+
+.header_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.125rem;
+    flex: 1;
+    border-right: 1px solid rgb(245, 245, 245);
+    position: relative;
+}
+
+.alert_circle_icon {
+    position: absolute;
+    background: #04796a;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    border: .125rem solid #fff;
+    top: .625rem;
+    right: 1.25rem;
+}
+
+.date_block {
+    font-size: 1.375rem;
+    color: #5f6368;
+    min-width: 7.5rem;
+    font-weight: 400;
+}
+
+.icon {
+    color: #505357;
+    font-size: 1.375rem;
+}
+
+.profile {
+    font-size: 2rem;
+    color: #04796a;
+}
+
+.icon_block:hover {
+    cursor: pointer;
+    background: #eee;
+}
